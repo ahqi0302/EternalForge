@@ -1,4 +1,4 @@
-# EternalForge v3.4.0 Modular Config Edition
+# EternalForge v3.4.0 
 
 Paper 1.21.10 / Java 21 / MMOItems / MythicLib / Vault
 
