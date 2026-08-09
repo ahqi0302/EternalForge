@@ -1,0 +1,16 @@
+name: EternalForge
+version: 3.4.0
+main: tw.eternalforge.EternalForgePlugin
+api-version: '1.21'
+authors: [OpenAI]
+description: MMOItems enhancement system with ItemsAdder resource-pack GUI for Paper 1.21.10
+softdepend: [MMOItems, MythicLib, Vault, ItemsAdder, Nexo, PlaceholderAPI]
+commands:
+  forge:
+    description: Open the EternalForge enhancement GUI
+    usage: /forge [open|history|reload|debug]
+permissions:
+  eternalforge.use:
+    default: true
+  eternalforge.admin:
+    default: op

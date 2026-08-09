@@ -1,0 +1,8 @@
+item:
+  type: ARMOR
+  id: '*'
+enabled: true
+level-profile: default
+materials:
+  - 'MMOITEMS:MATERIAL:ARMOR_REINFORCEMENT_STONE:2'
+  - 'VANILLA:IRON_INGOT:6'

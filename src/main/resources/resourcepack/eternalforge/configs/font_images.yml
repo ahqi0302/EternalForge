@@ -1,0 +1,20 @@
+info:
+  namespace: eternalforge
+
+font_images:
+  forge_gui:
+    path: font/forge_gui.png
+    symbol: ""
+    # 176x222 texture: use 222 so rendered width is ~176 GUI pixels.
+    scale_ratio: 222
+    y_position: 13
+    shadow:
+      enabled: false
+
+  forge_button:
+    path: font/forge_button.png
+    symbol: ""
+    scale_ratio: 16
+    y_position: 12
+    shadow:
+      enabled: false

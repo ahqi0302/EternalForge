@@ -1,0 +1,17 @@
+max-level: 15
+levels:
+  '1':  { chance: 100.0, money: 100,   fail-drop: 0, destroy: false }
+  '2':  { chance: 100.0, money: 200,   fail-drop: 0, destroy: false }
+  '3':  { chance: 100.0, money: 350,   fail-drop: 0, destroy: false }
+  '4':  { chance: 95.0,  money: 500,   fail-drop: 0, destroy: false }
+  '5':  { chance: 90.0,  money: 800,   fail-drop: 0, destroy: false }
+  '6':  { chance: 85.0,  money: 1200,  fail-drop: 0, destroy: false }
+  '7':  { chance: 80.0,  money: 1800,  fail-drop: 0, destroy: false }
+  '8':  { chance: 70.0,  money: 2800,  fail-drop: 0, destroy: false }
+  '9':  { chance: 60.0,  money: 4000,  fail-drop: 1, destroy: false }
+  '10': { chance: 50.0,  money: 6000,  fail-drop: 1, destroy: false }
+  '11': { chance: 40.0,  money: 9000,  fail-drop: 1, destroy: false }
+  '12': { chance: 30.0,  money: 14000, fail-drop: 1, destroy: false }
+  '13': { chance: 22.0,  money: 22000, fail-drop: 1, destroy: false }
+  '14': { chance: 15.0,  money: 35000, fail-drop: 2, destroy: false }
+  '15': { chance: 10.0,  money: 50000, fail-drop: 2, destroy: false }

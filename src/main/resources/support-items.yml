@@ -1,0 +1,41 @@
+success:
+  enabled: true
+  consume: true
+  stones:
+    normal:
+      matcher: 'MMOITEMS:MATERIAL:FORGE_STONE_I'
+      name: '&f普通強化石'
+      bonus-chance: 5.0
+    fine:
+      matcher: 'MMOITEMS:MATERIAL:FINE_REINFORCEMENT_STONE'
+      name: '&a優良強化石'
+      bonus-chance: 10.0
+    rare:
+      matcher: 'MMOITEMS:MATERIAL:RARE_REINFORCEMENT_STONE'
+      name: '&9稀有強化石'
+      bonus-chance: 15.0
+    epic:
+      matcher: 'MMOITEMS:MATERIAL:EPIC_REINFORCEMENT_STONE'
+      name: '&5史詩強化石'
+      bonus-chance: 20.0
+    legendary:
+      matcher: 'MMOITEMS:MATERIAL:LEGENDARY_REINFORCEMENT_STONE'
+      name: '&6傳說強化石'
+      bonus-chance: 30.0
+    eternal:
+      matcher: 'MMOITEMS:MATERIAL:ETERNAL_REINFORCEMENT_STONE'
+      name: '&d幻域強化石'
+      bonus-chance: 40.0
+
+protection:
+  enabled: true
+  matcher: 'MMOITEMS:MATERIAL:FORGE_PROTECTION'
+  prevent-level-drop: true
+  consume-on-trigger: true
+
+amplifier:
+  enabled: true
+  matcher: 'MMOITEMS:MATERIAL:FORGE_ASCENSION'
+  trigger-chance: 20.0
+  extra-level: 1
+  consume: true

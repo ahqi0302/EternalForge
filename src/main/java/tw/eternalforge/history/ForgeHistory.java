@@ -1,0 +1,7 @@
+package tw.eternalforge.history;
+import org.bukkit.entity.Player;import org.bukkit.inventory.ItemStack;import tw.eternalforge.EternalForgePlugin;import tw.eternalforge.util.Text;
+import java.io.*;import java.nio.charset.StandardCharsets;import java.time.LocalDateTime;import java.time.format.DateTimeFormatter;import java.util.*;
+public final class ForgeHistory{private final EternalForgePlugin plugin;private final File file;public ForgeHistory(EternalForgePlugin p){plugin=p;file=new File(p.getDataFolder(),"history.log");}
+ public void append(Player p,ItemStack item,int before,int after,String result,double chance){if(!plugin.getConfig().getBoolean("history.enabled",true))return;try{plugin.getDataFolder().mkdirs();try(var w=new OutputStreamWriter(new FileOutputStream(file,true),StandardCharsets.UTF_8)){w.write(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))+"\t"+p.getUniqueId()+"\t"+p.getName()+"\t"+Text.plainItemName(item)+"\t"+result+"\t"+before+"\t"+after+"\t"+String.format(Locale.ROOT,"%.1f",chance)+"\n");}}catch(IOException e){plugin.getLogger().warning("history write failed: "+e.getMessage());}}
+ public List<String> recent(String name,int limit){if(!file.exists())return List.of();try{List<String> all=java.nio.file.Files.readAllLines(file.toPath(),StandardCharsets.UTF_8);List<String> out=new ArrayList<>();for(int i=all.size()-1;i>=0&&out.size()<limit;i--){String s=all.get(i);if(name==null||s.toLowerCase().contains("\t"+name.toLowerCase()+"\t"))out.add(s);}return out;}catch(IOException e){return List.of();}}
+}

@@ -1,0 +1,82 @@
+forge:
+  title: '&8【&b幻域永恆&8】 &0強化介面'
+  size: 54
+  default-max-level: 15
+  equipment-slot: 13
+  material-slots: [29, 30, 31, 32]
+  success-scroll-slot: 20
+  protection-scroll-slot: 21
+  amplifier-slot: 22
+  confirm-slot: 49
+  preview-slot: 4
+  return-items-on-close: true
+  require-configured-recipe: true
+  animation:
+    enabled: true
+    duration-ticks: 30
+    step-ticks: 5
+
+gui-placeholders:
+  equipment:
+    material: ANVIL
+    name: '&b&l✦ 放入強化裝備 ✦'
+    lore:
+      - ''
+      - '&7請放入要強化的 MMOItems 裝備。'
+      - '&7武器、防具需設定 Upgrade Template。'
+      - ''
+      - '&e▶ 用滑鼠拿著裝備點擊此格'
+  material:
+    material: GRAY_DYE
+    name: '&6&l強化材料 %index%'
+    lore:
+      - ''
+      - '&7放入此裝備需要的強化材料。'
+      - '&7放入裝備後會顯示實際需求。'
+  unused-material:
+    material: LIGHT_GRAY_STAINED_GLASS_PANE
+    name: '&8此欄位不需要材料'
+    lore:
+      - '&7目前裝備沒有使用此材料欄。'
+  success-scroll:
+    material: NETHER_STAR
+    name: '&a&l✦ 強化石槽位 ✦'
+    lore:
+      - ''
+      - '&7放入強化石，提高本次強化成功率。'
+      - ''
+      - '&f普通強化石 &8- &a+5%'
+      - '&a優良強化石 &8- &a+10%'
+      - '&9稀有強化石 &8- &a+15%'
+      - '&5史詩強化石 &8- &a+20%'
+      - '&6傳說強化石 &8- &a+30%'
+      - '&d幻域強化石 &8- &a+40%'
+  protection:
+    material: SHIELD
+    name: '&b&l✦ 保護券槽位 ✦'
+    lore:
+      - ''
+      - '&7若本次強化失敗原本會掉級，'
+      - '&7保護券可讓強化等級維持不變。'
+  amplifier:
+    material: AMETHYST_SHARD
+    name: '&d&l✦ 躍升石槽位 ✦'
+    lore:
+      - ''
+      - '&7放入躍升石，可在強化成功時'
+      - '&7有機率額外提升強化等級。'
+      - ''
+      - '&7強化成功時有 &d%chance%% &7機率'
+      - '&7額外提升 &d+%extra% &7個強化等級。'
+
+display-names:
+  FORGE_STONE_I: '&a強化石'
+  FORGE_PROTECTION: '&b保護券'
+  FORGE_ASCENSION: '&d躍升石'
+  銅幣: '&6銅幣'
+
+feedback:
+  success: { sound: 'ENTITY_PLAYER_LEVELUP', volume: 0.8, pitch: 1.35 }
+  fail: { sound: 'BLOCK_ANVIL_DESTROY', volume: 0.65, pitch: 0.8 }
+  drop: { sound: 'ENTITY_ITEM_BREAK', volume: 0.8, pitch: 0.8 }
+  destroy: { sound: 'ENTITY_ITEM_BREAK', volume: 1.0, pitch: 0.55 }

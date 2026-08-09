@@ -1,0 +1,20 @@
+# EternalForge 3.4.0 Modular Config Edition
+# 這裡只放全域核心設定。其他設定已拆分到 gui.yml / messages.yml / support-items.yml / levels/ / recipes/。
+
+resourcepack:
+  auto-install: true
+  overwrite-bundled-gui: true
+  enabled: false
+  require-itemsadder: false
+  symbol: '\uE650'
+  fallback-title: '&8【&b幻域永恆&8】 &0強化介面'
+  clear-filler-items: true
+
+broadcast:
+  enabled: true
+  minimum-level: 10
+  message: '&8[&b鍛造之星&8] &e%player% &7成功將 &f%item% &7強化至 &6&l+%level%&7！'
+
+history:
+  enabled: true
+  command-limit: 10

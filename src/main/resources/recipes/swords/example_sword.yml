@@ -1,0 +1,24 @@
+# 範例：單一武器可以完全自訂 max-level / materials / levels。
+item:
+  type: SWORD
+  id: FIRE_SWORD
+enabled: true
+max-level: 5
+level-profile: default
+materials:
+  - 'MMOITEMS:MATERIAL:銅幣:2'
+  - 'MMOITEMS:MATERIAL:FIRE_CRYSTAL:3'
+levels:
+  '1': { chance: 100.0, money: 100,  fail-drop: 0, destroy: false }
+  '2': { chance: 95.0,  money: 200,  fail-drop: 0, destroy: false }
+  '3': { chance: 90.0,  money: 350,  fail-drop: 0, destroy: false }
+  '4': { chance: 80.0,  money: 600,  fail-drop: 0, destroy: false }
+  '5':
+    chance: 70.0
+    money: 1000
+    fail-drop: 1
+    destroy: false
+    # 也可以只在某一級更換素材：
+    materials:
+      - 'MMOITEMS:MATERIAL:銅幣:5'
+      - 'MMOITEMS:MATERIAL:FIRE_CRYSTAL:5'

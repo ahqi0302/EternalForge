@@ -1,0 +1,8 @@
+# 所有沒有專屬設定的 SWORD 都會使用這份。
+item:
+  type: SWORD
+  id: '*'
+enabled: true
+level-profile: default
+materials:
+  - 'MMOITEMS:MATERIAL:銅幣:2'
